@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@types/node": "^26.0.1",
+    "socket.io-client": "^4.8.3"
+  },
+  "dependencies": {
+    "zod": "^4.4.3"
+  }
+}
