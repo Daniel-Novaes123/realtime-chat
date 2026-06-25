@@ -7,19 +7,19 @@ Chat em tempo real inspirado no Discord, construído com Next.js, Node.js e Sock
 ![Next.js](https://img.shields.io/badge/Next.js-16-black)
 ![Socket.IO](https://img.shields.io/badge/Socket.IO-4.x-white)
 
-## ✨ Funcionalidades
+## Funcionalidades
 
-- 🔌 **Conexão em tempo real** via WebSockets com Socket.IO
-- 💬 **Mensagens instantâneas** com autor, timestamp relativo e cores únicas por usuário
-- 🏠 **Salas de conversa** — #geral, #frontend, #backend, #projetos
-- 👥 **Lista de usuários online** atualizada em tempo real
-- ✍️ **Indicador de digitação** com debounce
-- 📜 **Histórico de mensagens** persistido no PostgreSQL
-- 🔔 **Notificações de entrada e saída** de usuários
-- 🌓 **Dark mode** com interface inspirada no Discord
-- ✅ **Validação de dados** com Zod no servidor
+-  **Conexão em tempo real** via WebSockets com Socket.IO
+-  **Mensagens instantâneas** com autor, timestamp relativo e cores únicas por usuário
+-  **Salas de conversa** — #geral, #frontend, #backend, #projetos
+-  **Lista de usuários online** atualizada em tempo real
+-  **Indicador de digitação** com debounce
+-  **Histórico de mensagens** persistido no PostgreSQL
+-  **Notificações de entrada e saída** de usuários
+-  **Dark mode** com interface inspirada no Discord
+-  **Validação de dados** com Zod no servidor
 
-## 🛠 Stack Tecnológica
+## Stack Tecnológica
 
 ### Frontend
 - [Next.js](https://nextjs.org/) (App Router)
@@ -36,7 +36,7 @@ Chat em tempo real inspirado no Discord, construído com Next.js, Node.js e Sock
 - [PostgreSQL](https://www.postgresql.org/) (hospedado no [Neon](https://neon.tech))
 - [Zod](https://zod.dev/)
 
-## 🏗 Arquitetura
+## Arquitetura
 
 ```
 realtime-chat/
@@ -89,7 +89,7 @@ Todos os clientes na sala
 Atualização do estado React
 ```
 
-## 🚀 Como rodar localmente
+## Como rodar localmente
 
 ### Pré-requisitos
 
@@ -152,9 +152,9 @@ npm run dev
 
 Abra [http://localhost:3000](http://localhost:3000) no navegador.
 
-> 💡 Abra em múltiplas abas para testar o chat em tempo real!
+> Abra em múltiplas abas para testar o chat em tempo real!
 
-## 📝 Variáveis de ambiente
+## Variáveis de ambiente
 
 ### Server (`server/.env`)
 
@@ -169,6 +169,6 @@ Abra [http://localhost:3000](http://localhost:3000) no navegador.
 |---|---|
 | `NEXT_PUBLIC_SERVER_URL` | URL do servidor (ex: http://localhost:3001) |
 
-## 👨‍💻 Autor
+## Autor
 
-Feito por **Daniel** — [GitHub](https://github.com/seu-usuario)
+Feito por **Daniel** — [GitHub](https://github.com/Daniel-Novaes123)
