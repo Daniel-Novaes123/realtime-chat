@@ -3,7 +3,7 @@ import { createServer } from 'http';
 import { Server } from 'socket.io';
 import cors from 'cors';
 import 'dotenv/config';
-import type { ServerToClientEvents, ClientToServerEvents } from '../../shared/types';
+import type { ServerToClientEvents, ClientToServerEvents } from '../../Shared/types';
 import { registerSocketHandlers } from './socket/handlers';
 
 const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:3000';

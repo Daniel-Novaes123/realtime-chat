@@ -1,6 +1,6 @@
 import { Server } from "socket.io";
 import { addUser, getUserBySocketId, getUsersByRoom, removeUser } from "../data/store";
-import type { User, ClientToServerEvents, ServerToClientEvents, Message, SystemMessage } from "../../../shared/types";
+import type { User, ClientToServerEvents, ServerToClientEvents, Message, SystemMessage } from "../../../Shared/types";
 import { randomUUID } from "node:crypto";
 import { prisma } from "../lib/prisma";
 import { joinRoomSchema, sendMessageSchema } from "../validators/schemas";

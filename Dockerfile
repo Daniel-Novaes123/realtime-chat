@@ -1,10 +1,11 @@
 FROM node:20-alpine
 
+WORKDIR /app
+
+COPY Shared/ ./Shared/
+COPY Server/ ./Server/
+
 WORKDIR /app/Server
-
-COPY Shared/ ./shared/
-COPY Server/ ./
-
 RUN npm install
 RUN npx prisma generate
 RUN npm run build

@@ -1,4 +1,4 @@
-import type { User } from '../../../shared/types';
+import type { User } from '../../../Shared/types';
 
 const users: Map<string, User> = new Map();
 
