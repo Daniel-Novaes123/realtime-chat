@@ -2,11 +2,10 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-COPY shared/ ./shared/
+COPY Shared/ ./Shared/
+COPY Server/ ./Server/
 
-COPY server/ ./Server/
-
-WORKDIR /app/server
+WORKDIR /app/Server
 RUN npm install
 RUN npm run build
 
