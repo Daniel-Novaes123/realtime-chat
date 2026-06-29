@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY shared/ ./shared/
 
-COPY server/ ./server/
+COPY server/ ./Server/
 
 WORKDIR /app/server
 RUN npm install
