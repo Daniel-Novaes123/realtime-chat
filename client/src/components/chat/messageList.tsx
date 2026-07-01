@@ -9,7 +9,7 @@ interface MessageListProps {
     isTyping: string[];
 }
 
-export const MessageList = ({ messages, currentUsername, isTyping }: MessageListProps) => {
+export const MessageList = ({ messages, isTyping }: MessageListProps) => {
     const bottomRef = useRef<HTMLDivElement>(null);
 
     const isFirstRender = useRef(true);
