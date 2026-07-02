@@ -7,6 +7,7 @@ import type { ServerToClientEvents, ClientToServerEvents } from '../../Shared/ty
 import { registerSocketHandlers } from './socket/handlers';
 
 const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:3000';
+console.log('CLIENT_URL:', JSON.stringify(CLIENT_URL));
 
 const app = express();
 app.use(cors({ origin: CLIENT_URL }));
