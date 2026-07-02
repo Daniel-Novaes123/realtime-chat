@@ -6,24 +6,32 @@ import 'dotenv/config';
 import type { ServerToClientEvents, ClientToServerEvents } from '../../Shared/types';
 import { registerSocketHandlers } from './socket/handlers';
 
-const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:3000';
-console.log('CLIENT_URL:', JSON.stringify(CLIENT_URL));
+const allowedOrigins = [
+    'http://localhost:3000',
+    'https://realtime-chat-4co6-three.vercel.app',
+];
 
 const app = express();
-app.use(cors({ origin: CLIENT_URL }));
+
+app.use(cors({
+    origin: allowedOrigins,
+    credentials: true,
+}));
 
 const httpServer = createServer(app);
 
 const io = new Server<ClientToServerEvents, ServerToClientEvents>(httpServer, {
     cors: {
-        origin: CLIENT_URL,
+        origin: allowedOrigins,
         methods: ['GET', 'POST'],
+        credentials: true,
     },
 });
 
 registerSocketHandlers(io);
 
 const PORT = process.env.PORT || 3001;
+
 httpServer.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
